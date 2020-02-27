@@ -7,12 +7,14 @@ This sample program works on cross-platform (Windows, Linux).
 Environment
 -----------
 * Visual Studio 2017/2019 / GCC 7.4 / Clang 6.0 (or later) 
-* Azure Kinect Sensor SDK v1.3.0 (or later)
-* Azure Kinect Body Tracking SDK v0.9.4 (or later)
+* Azure Kinect Sensor SDK v1.4.0 (or later)
+* Azure Kinect Body Tracking SDK v1.0.1 (or later)
 * OpenCV 3.4.2 (or later)
 * CMake 3.15.4 (latest release is preferred)
+* .NET Core SDK 3.1.2 (or later)
 
 <sup>&#042; Part of the sample program (point_cloud) requires viz_module of OpenCV.</sup>  
+<sup>&#042; C# sample requires .NET Core 3. Currently, C# sample only works on Windows because WPF support is Windows only.</sup>  
 
 License
 -------
