@@ -111,7 +111,8 @@ namespace k4a
 cv::Mat k4a_get_mat( k4a_image_t& src, bool deep_copy = true )
 {
     k4a_image_reference( src );
-    return k4a::get_mat( k4a::image( src ), deep_copy );
+    k4a::image img = k4a::image( src );
+    return k4a::get_mat( img, deep_copy );
 }
 
 #endif // __UTIL__
