@@ -25,7 +25,7 @@ namespace skeleton
     {
         // Kinect
         K4A.Device device = null;
-        K4A.Calibration calibration = null;
+        K4A.Calibration calibration;
 
         // Body Tracking
         K4ABT.Tracker tracker = null;
