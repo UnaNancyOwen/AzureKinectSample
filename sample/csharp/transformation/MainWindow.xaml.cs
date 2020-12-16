@@ -109,7 +109,7 @@ namespace transformation
             }
         }
 
-        private void Window_Unloaded(object sender, RoutedEventArgs e)
+        private void Window_Closing(object sender, CancelEventArgs e)
         {
             // Destroy Transformation
             if (transformation != null)

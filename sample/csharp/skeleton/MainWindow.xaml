@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:skeleton"
         mc:Ignorable="d"
         Title="skeleton"
-        Loaded="Window_Loaded" Unloaded="Window_Unloaded"
+        Loaded="Window_Loaded" Closing="Window_Closing"
         SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Grid>
         <Image x:Name="Color_Image" Margin="0,0,0,0"/>

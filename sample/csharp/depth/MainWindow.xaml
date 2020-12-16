@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:depth"
         mc:Ignorable="d"
         Title="depth"
-        Loaded="Window_Loaded" Unloaded="Window_Unloaded"
+        Loaded="Window_Loaded" Closing="Window_Closing"
         SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Grid>
         <Image x:Name="Depth_Image" Margin="0,0,0,0"/>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:transformation"
         mc:Ignorable="d"
         Title="transformation"
-        Loaded="Window_Loaded" Unloaded="Window_Unloaded"
+        Loaded="Window_Loaded" Closing="Window_Closing"
         SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
