@@ -130,19 +130,21 @@ namespace skeleton
                                 K4ABT.Joint joint = skeleton.GetJoint(joint_index);
                                 Vector2? position = calibration.TransformTo2D(joint.Position, K4A.CalibrationDeviceType.Depth, K4A.CalibrationDeviceType.Color);
 
-                                if (position.HasValue)
+                                if (!position.HasValue)
                                 {
-                                    // Create Ellipse
-                                    const int radius = 10;
-                                    SolidColorBrush stroke_color = new SolidColorBrush(colors[id % colors.Length]);
-                                    SolidColorBrush fill_color = new SolidColorBrush((joint.ConfidenceLevel >= K4ABT.JointConfidenceLevel.Medium) ? colors[id % colors.Length] : Colors.Transparent);
-                                    Ellipse ellipse = new Ellipse(){Width = radius, Height = radius, StrokeThickness = 1, Stroke = stroke_color, Fill = fill_color};
-
-                                    // Add Ellipse to Canvas
-                                    Canvas.SetLeft(ellipse, position.Value.X - (radius / 2));
-                                    Canvas.SetTop(ellipse, position.Value.Y - (radius / 2));
-                                    Canvas_Body.Children.Add(ellipse);
+                                    continue;
                                 }
+
+                                // Create Ellipse
+                                const int radius = 10;
+                                SolidColorBrush stroke_color = new SolidColorBrush(colors[id % colors.Length]);
+                                SolidColorBrush fill_color = new SolidColorBrush((joint.ConfidenceLevel >= K4ABT.JointConfidenceLevel.Medium) ? colors[id % colors.Length] : Colors.Transparent);
+                                Ellipse ellipse = new Ellipse(){Width = radius, Height = radius, StrokeThickness = 1, Stroke = stroke_color, Fill = fill_color};
+
+                                // Add Ellipse to Canvas
+                                Canvas.SetLeft(ellipse, position.Value.X - (radius / 2));
+                                Canvas.SetTop(ellipse, position.Value.Y - (radius / 2));
+                                Canvas_Body.Children.Add(ellipse);
                             }
                         }
                     }
