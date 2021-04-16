@@ -9,12 +9,14 @@ Environment
 * Visual Studio 2017/2019 / GCC 7.4 / Clang 6.0 (or later) 
 * Azure Kinect Sensor SDK v1.4.1 (or later)
 * Azure Kinect Body Tracking SDK v1.0.1 (or later)
-* OpenCV 3.4.2 (or later)
-* CMake 3.15.4 (latest release is preferred)
+* OpenCV 4.x (or later)
+* CMake 3.19 (latest release is preferred)
 * .NET SDK 5.0 (or later)
+* Python 3.x (or later)
 
 <sup>&#042; Part of the sample program (point_cloud) requires viz_module of OpenCV.</sup>  
 <sup>&#042; C# sample requires .NET 5. Currently, C# sample only works on Windows because WPF support is Windows only.</sup>  
+<sup>&#042; Python sample requires build and install from official package yourself. Please see [this](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/src/python/k4a/README.md) documents.</sup>  
 
 License
 -------
